@@ -16,6 +16,10 @@ I used two models in this project. The first one is Inceptionv3 model. The secon
 What I am do here is to slightly update their model to fit the case of 10 classes, also I have tested them on both Yelp's dataset and Food101 dataset.
 
 The followings are the results I got.
+<figure class="half">
+    <img src="./Results/GoodModel_yelpDataSet.png">
+    <img src="./Results/GoodModel_Food101DataSet.png">
+</figure>
 
 
 
