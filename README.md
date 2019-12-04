@@ -11,18 +11,26 @@ Btw, the food class I have chosen is foodClass = {"cheesecake", "mussels", "waff
 
 ## Model training
 
-I used two models in this project. The first one is Inceptionv3 model.  
+I used two models in this project. The first one is Inceptionv3 model. The second one is the model in the second reference. They are both written in python, and choosen a 3 class subsets of food101.
 
+What I am do here is to slightly update their model to fit the case of 10 classes, also I have tested them on both Yelp's dataset and Food101 dataset.
 
-###Reference
-1.https://colab.research.google.com/github/theimgclist/examples/blob/MultiClassTF2.0/community/en/multi_class_classification/food_classifier.ipynb
-
-2.
-
+The followings are the results I got.
 
 
 
-##Recommendation System
+  
+
+
+### Reference
+1. https://colab.research.google.com/github/theimgclist/examples/blob/MultiClassTF2.0/community/en/multi_class_classification/food_classifier.ipynb
+
+2. https://github.com/rileykwok/Food-Classification
+
+
+
+
+## Recommendation System
 
 This part is the fronted_End of the previous part. What we are going to do here is to upload any picture, after that, we used our models to produce a label for that picture. SearchAPI.py is what I wrote to search for a nearby reasturant using the returned food label by Yelp's API. A website was developed to display the results.
 
@@ -31,6 +39,6 @@ To run this part, please go to the directory recommendationSystem, In the termin
 ***python manage.py runserver***
 
 
-##Future Work
+## Future Work
 
 The future work was designed to predict a person's resturant preference base on his friends's historical data, we generated two files, one is user's friendShip, the other one is the history data of user. Those files are in the folder futureWork. This did not work because in this data, a user has very small amount of friends, the information is simply not enough to do predictions. 
