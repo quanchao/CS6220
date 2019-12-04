@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Suggest Me</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="{% url 'index' %}" class="brand-logo">6220</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="{% url 'login' %}" style="font-size: 1.6vw">Login</a>
+        </li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Suggest Me</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Recognize your favourite food and give recommendation of nearby restaurant</h5>
+        </div>
+        <div class="row center">
+          <a href="{% url 'search' %}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="../static/img/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">add_a_photo</i></h2>
+            <h5 class="center">Food Recognition</h5>
+
+            <p class="light">As a newcomer who is not familiar with the local language, we maynot know the exact name of 
+            a specific food. However, image as a information source is beyond the limit of language. We use our model to
+          recognize the name of food.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">restaurant</i></h2>
+            <h5 class="center">Restaurant Recommendation</h5>
+
+            <p class="light">We give recommendation based on the label of the food. Futhermore, we use google map API to
+            let you know the location of those restaurant. User can see the details of the restaurant on yelp.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Agile Development</h5>
+
+            <p class="light">Our project is based on agile method. This is more efficient for small group like us.
+            Besides, we get rid of the burden of heavy document by communicating face to face. Each member have high enthusiasm for this project.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Our Group</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">About Us</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Presentation</a></li>
+            <li><a class="white-text" href="#!">Our demo</a></li>
+            <li><a class="white-text" href="#!">Motivivation</a></li>
+            <li><a class="white-text" href="#!">Love for 6220</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contact</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Weiqi Xiao</a></li>
+            <li><a class="white-text" href="#!">Jingyi Li</a></li>
+            <li><a class="white-text" href="#!">Yining Gu</a></li>
+            <li><a class="white-text" href="#!">Chao Lin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      CS6520 <a class="brown-text text-lighten-3" href="#">Suggest Me</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../static/js/materialize.js"></script>
+  <script src="../static/js/init.js"></script>
+
+  </body>
+</html>

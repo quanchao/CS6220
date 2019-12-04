@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Suggest Me</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="{% url 'index' %}" class="brand-logo">6220</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" style="font-size: 1.6vw">Login</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="row customize valign-wrapper" style="background: url(/static/img/background1.jpg);background-size: cover; margin-bottom: 0;height: 690px"
+           :style="{'min-height': (page_height-60)+'px'}">
+    <div class="col s12 m4 offset-m4 l4 offset-l4" style="width:35%">
+      <div class="card-panel" style="padding-bottom: 2.5%;padding-top: 4.7%;opacity: 0.95;">
+        <div class="row center-align" style="margin-top:0; margin-bottom: 1.5rem;">
+          <h3>Login</h3>
+        </div>
+        <div class="row">
+          <div class="row" style="margin-bottom: 0;">
+            <div class="input-field col s11" style="margin-bottom: 0; margin-left: 18px" >
+              <i class="medium material-icons prefix">email</i>
+              <input id="email" type="email" class="validate"  v-model="email"/>
+              <label for="email" v-show="email===''">Email</label>
+            </div>
+            <span class="red-text" style="margin-left: 72px">{{emailMessage}}</span>
+          </div>
+          <div class="row">
+            <div class="input-field col s11" style="margin-bottom: 0; margin-left: 18px">
+              <i class="medium material-icons prefix">vpn_key</i>
+              <input id="password" type="password" class="validate" v-model="password" />
+              <label for="password" v-show="password===''">Password</label>
+            </div>
+            <span class="red-text" style="margin-left: 72px">{{passwordMessage}}</span>
+          </div>
+        </div>
+        <div class="row center-align">
+            <form action="/user_login" method="post">
+              {% csrf_token %}
+              <button class="col s6 offset-s3 btn waves-effect waves-light" style="margin-top: 3%;" type="submit" id="submit">
+                Login
+              </button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../static/js/materialize.js"></script>
+  <script src="../static/js/init.js"></script>
+
+  </body>
+</html>
