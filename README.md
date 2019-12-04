@@ -28,6 +28,7 @@ The followings are the results I got.
 <center class="">
     <img src="./Results/result1.png" width="400"/>
 </center>   
+
 ### Model2: Native model with some layers
 <center class="">
     <img src="./Results/result2.png" width="400"/>
