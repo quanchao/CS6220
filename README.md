@@ -9,7 +9,7 @@ Btw, the food class I have chosen is foodClass = {"cheesecake", "mussels", "waff
 
 
 
-## Model traing
+## Model training
 
 
 
