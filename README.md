@@ -18,16 +18,17 @@ I used two models in this project. The first one is Inceptionv3 model. The secon
 What I am do here is to slightly update their model to fit the case of 10 classes, also I have tested them on both Yelp's dataset and Food101 dataset.
 
 The followings are the results I got.
-<figure class="half">
-    <img width="400" height="550" src="./Results/GoodModel_Food101DataSet.png" alt = "figure1">
-    <img  width="400" height="550" alt = "figure2"src="./Results/GoodModel_yelpDataSet.png">
-</figure>
+
+<center class="half">
+    <img src="./Results/GoodModel_Food101DataSet.png" width="200"/><img src="./Results/GoodModel_yelpDataSet.png" width="200"/>
+</center>
+
 
 
 ### Analytics
 1. For the same model, I run it on different datasets, the results are different, for example,  for the inception_v3 model, the accuracy on the food101 set is about 90%, however, it is only 60% in yelp's dataset.
 
-2. https://github.com/rileykwok/Food-Classification
+2. 
   
 
 
