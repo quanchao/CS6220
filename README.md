@@ -26,12 +26,12 @@ Another thing important in  comparison is that the two datasets have different s
 The followings are the results I got.
 ### Model1: Fine tuning Inceptionv3 model with 10 classes
 <center class="">
-    <img src="./Results/result1.png" width="400"/>
+    <img src="./Results/result1.jpg" width="400"/>
 </center>   
 
 ### Model2: Native model with some layers
 <center class="">
-    <img src="./Results/result2.png" width="400"/>
+    <img src="./Results/result2.jpg" width="400"/>
 </center>   
 
 ### Analytics and comments
